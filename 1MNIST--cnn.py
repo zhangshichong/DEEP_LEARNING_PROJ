@@ -84,3 +84,4 @@ for i in range(1000):
         print("step %d, training accuracy %g" % (i, train_accuracy))
     sess.run(train_step,feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
 print("test accuracy %g" % sess.run(accuracy, feed_dict={x: mnist.test.images[1:100, :], y_: mnist.test.labels[1:100, :], keep_prob : 1.0}))
+#
